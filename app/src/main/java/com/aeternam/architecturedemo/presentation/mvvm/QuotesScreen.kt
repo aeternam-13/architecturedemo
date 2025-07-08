@@ -30,6 +30,7 @@ import androidx.navigation.NavController
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.aeternam.architecturedemo.domain.model.Quote
 import com.aeternam.architecturedemo.presentation.Screens.QuoteMviDestination
+import com.aeternam.architecturedemo.presentation.common.QuoteDetail
 
 @Composable
 fun QuoteScreen(
@@ -58,7 +59,7 @@ fun QuoteScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "QuotesMvvm", style = MaterialTheme.typography.headlineLarge
+                    text = "QuotesMVVM", style = MaterialTheme.typography.headlineLarge
                 )
                 IconButton(
                     onClick = {
@@ -72,27 +73,10 @@ fun QuoteScreen(
             Spacer(modifier = Modifier.height(16.dp))
             Column(
                 modifier = Modifier
-
                     .fillMaxSize()
                     .padding(8.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
             ) {
-                Text(
-                    text = state.content,
-                    style = MaterialTheme.typography.headlineMedium,
-                    textAlign = TextAlign.Center,
-                    fontWeight = FontWeight.Bold,
-                    color = Color(state.color)
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Text(
-                    text = state.author,
-                    style = MaterialTheme.typography.headlineSmall,
-                    textAlign = TextAlign.Right,
-                    color = Color(state.color)
-                )
-
+                QuoteDetail(state)
             }
         }
     }
