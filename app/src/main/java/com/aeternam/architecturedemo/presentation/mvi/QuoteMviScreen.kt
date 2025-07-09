@@ -22,9 +22,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.aeternam.architecturedemo.presentation.Screens.QuoteMvvmDestination
+import com.aeternam.architecturedemo.presentation.Destinations.QuoteMvvmDestination
 import com.aeternam.architecturedemo.presentation.common.QuoteDetail
-import com.aeternam.architecturedemo.presentation.mvvm.QuoteViewModel
 
 @Composable
 fun QuoteMviScreen(

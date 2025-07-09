@@ -1,4 +1,4 @@
-package com.aeternam.architecturedemo.presentation.Screens
+package com.aeternam.architecturedemo.presentation.Destinations
 
 import kotlinx.serialization.Serializable
 

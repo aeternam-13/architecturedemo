@@ -10,8 +10,8 @@ import com.aeternam.architecturedemo.presentation.mvvm.QuoteScreen
 import com.aeternam.architecturedemo.ui.theme.ArchitectureDemoTheme
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.compose.composable
-import com.aeternam.architecturedemo.presentation.Screens.QuoteMviDestination
-import com.aeternam.architecturedemo.presentation.Screens.QuoteMvvmDestination
+import com.aeternam.architecturedemo.presentation.Destinations.QuoteMviDestination
+import com.aeternam.architecturedemo.presentation.Destinations.QuoteMvvmDestination
 import com.aeternam.architecturedemo.presentation.mvi.QuoteMviScreen
 
 @AndroidEntryPoint

@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowCircleRight
 import androidx.compose.material.icons.filled.Radar
 import androidx.compose.material.icons.filled.SwitchLeft
 import androidx.compose.material3.FloatingActionButton
@@ -22,14 +21,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.aeternam.architecturedemo.domain.model.Quote
-import com.aeternam.architecturedemo.presentation.Screens.QuoteMviDestination
+import com.aeternam.architecturedemo.presentation.Destinations.QuoteMviDestination
 import com.aeternam.architecturedemo.presentation.common.QuoteDetail
 
 @Composable
